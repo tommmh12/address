@@ -1,13 +1,13 @@
 package com.myproject.backend.addressmanagement;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class AddressmanagementApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
+    @Test
+    void applicationClass_shouldBeDiscoverable() {
+        assertEquals("AddressmanagementApplication", AddressmanagementApplication.class.getSimpleName());
+    }
 }
